@@ -212,6 +212,8 @@ describe('/dutch-auction/order', () => {
     order: DutchOrder
     signature: string
   }> => {
+    console.log({URL})
+    console.log({payload})
     try {
       const postResponse = await axios({
         method: 'post',
